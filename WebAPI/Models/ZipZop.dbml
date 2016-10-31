@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="20131011110380" Class="ZipZopDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=valera;Initial Catalog=20131011110380;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="_20131011110380ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Usuario" Member="Usuarios">
+    <Type Name="Usuario">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nome" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="uri" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="foto" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Usuario_Usuario_GrupoUsuario" Member="Usuario_GrupoUsuarios" AccessModifier="Internal" ThisKey="id" OtherKey="id_usuario" Type="Usuario_GrupoUsuario" />
+      <Association Name="Usuario_GrupoUsuario" Member="GrupoUsuarios" AccessModifier="Internal" ThisKey="id" OtherKey="id_adm" Type="GrupoUsuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario_GrupoUsuario" Member="Usuario_GrupoUsuarios">
+    <Type Name="Usuario_GrupoUsuario">
+      <Column Name="id_grupousuario" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Usuario_Usuario_GrupoUsuario" Member="Usuario" AccessModifier="Internal" ThisKey="id_usuario" OtherKey="id" Type="Usuario" IsForeignKey="true" />
+      <Association Name="GrupoUsuario_Usuario_GrupoUsuario" Member="GrupoUsuario" AccessModifier="Internal" ThisKey="id_grupousuario" OtherKey="id" Type="GrupoUsuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GrupoUsuario" Member="GrupoUsuarios">
+    <Type Name="GrupoUsuario">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descricao" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="id_adm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="GrupoUsuario_Usuario_GrupoUsuario" Member="Usuario_GrupoUsuarios" AccessModifier="Internal" ThisKey="id" OtherKey="id_grupousuario" Type="Usuario_GrupoUsuario" />
+      <Association Name="Usuario_GrupoUsuario" Member="Usuario" AccessModifier="Internal" ThisKey="id_adm" OtherKey="id" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
