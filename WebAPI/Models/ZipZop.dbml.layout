@@ -14,7 +14,7 @@
         <elementListCompartment Id="30fb5e58-a607-4336-868c-3d706c72ded5" absoluteBounds="3.39, 5.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(3.5625 : 3.95359537760417); (3.5625 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3.5625 : 3.95359537760417); (3.5625 : 4.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ZipZopDataContext/Usuario/Usuario_Usuario_GrupoUsuario" />
       <nodes>
         <classShapeMoniker Id="e6f046ab-1c4f-441a-90d1-9b2486cc1d04" />
@@ -27,14 +27,14 @@
         <elementListCompartment Id="9589c111-aa75-4fbc-acaf-a4af5e24609b" absoluteBounds="6.64, 2.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(7.625 : 3.8862939453125); (7.625 : 5.22199625651042); (5.375 : 5.22199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(7.625 : 3.8862939453125); (7.625 : 5.22199625651042); (5.375 : 5.22199625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ZipZopDataContext/GrupoUsuario/GrupoUsuario_Usuario_GrupoUsuario" />
       <nodes>
         <classShapeMoniker Id="2dbc2d88-90df-42f9-867c-1cf78bcb0b15" />
         <classShapeMoniker Id="95b9b337-a0c0-4365-b596-14a505f70ec2" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3.75 : 3.19314697265625); (6.625 : 3.19314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3.75 : 3.19314697265625); (6.625 : 3.19314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/ZipZopDataContext/Usuario/Usuario_GrupoUsuario" />
       <nodes>
         <classShapeMoniker Id="e6f046ab-1c4f-441a-90d1-9b2486cc1d04" />

@@ -9,7 +9,6 @@ public class UploadController : ApiController
 {
     public async Task<HttpResponseMessage> PostFormData()
     {
-        System.Console.WriteLine("olá");
         // Check if the request contains multipart/form-data.
         if (!Request.Content.IsMimeMultipartContent())
         {
