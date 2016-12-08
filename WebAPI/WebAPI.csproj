@@ -197,6 +197,7 @@
     </Compile>
     <Compile Include="Models\FileUpload.cs" />
     <Compile Include="Models\Mensagem.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\ZipZop.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
